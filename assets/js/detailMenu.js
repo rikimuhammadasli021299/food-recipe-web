@@ -47,4 +47,8 @@ switch (month) {
     break;
 }
 
-document.getElementById('date').innerHTML = `${date} ${month} ${year}`;
+function showDate() {
+  document.getElementById('date').innerHTML = `${date} ${month} ${year}`;
+}
+
+showDate();

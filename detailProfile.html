@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/utility.css" />
-    <link rel="stylesheet" href="./assets/css/searchRecipes.css" />
+    <link rel="stylesheet" href="./assets/css/detailProfile.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
 
-    <title>Recipes</title>
+    <title>Detail Profile</title>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -25,20 +25,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5 ms-md-5">
             <li class="nav-item me-5">
-              <a class="nav-link" aria-current="page" href="#"> <span>Register</span></a>
+              <a class="nav-link" aria-current="page" href="#"> <span class="active">Home</span></a>
             </li>
             <li class="nav-item me-5">
-              <a class="nav-link" href="#"><span>Login</span></a>
+              <a class="nav-link" href="./addRecipe.html"><span>Add Recipe</span></a>
             </li>
             <li class="nav-item me-5">
-              <a class="nav-link" href="#"><span class="active">Search Recipes</span></a>
+              <a class="nav-link" href="./searchRecipes.html"><span>Search Recipes</span></a>
             </li>
           </ul>
           <span class="me-3 line-photo"></span>
           <div class="contianer d-flex">
             <img src="./assets/image/user.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
             <div class="d-flex-column ms-3 me-5 py-2">
-              <p class="mb-0">Ayudia</p>
+              <p class="mb-0 fw-medium">Ayudia</p>
               <a href="" class="nav-link text-logout">Logout</a>
             </div>
           </div>
@@ -49,161 +49,146 @@
 
     <div class="container-fluid ff-poppins px-0">
       <!-- Hero Section Start -->
-      <section class="hero px-3 px-md-0">
-        <h1 class="color-blue">Discover Recipe & Delicious Food</h1>
-        <div class="d-flex mt-3 search">
-          <input type="search" class="form-control" placeholder="Search Recipes" />
-          <button class="btn background-primary color-white ms-3">Search</button>
+      <header class="container d-sm-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <span class="me-3 line-photo-user"></span>
+          <img src="./assets/image/user.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover ms-0" />
+          <div class="d-flex flex-column ms-3 h-100 justify-content-center">
+            <p class="mb-0 fw-medium">Ayudia</p>
+            <p class="text-recipe mb-0">10 Recipes</p>
+          </div>
         </div>
-        <div class="d-flex flex-wrap mt-3 tag gap-3">
-          <button class="btn background-primary color-white px-3">New</button>
-          <button class="btn background-primary color-white px-3">Popular</button>
-          <button class="btn background-green color-white px-3">Vegetarian</button>
-          <button class="btn background-green color-white px-3">Breakfast</button>
+        <div class="text-sm-end text-sm-start fw-medium pt-3 ps-4">
+          <p class="my-0 fw-medium" id="date"></p>
         </div>
-      </section>
+      </header>
       <!-- Hero Section End-->
 
-      <!-- Menu Recipes Start -->
-      <section class="menu-recipes row g-0">
-        <div class="content-left col-md-11">
-          <div class="card mb-3 mt-5 card-menu border-0 mx-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
-              </div>
-              <div class="container col-md-6 p-0">
-                <div class="ms-md-4 card-body ps-1 pt-md-0">
-                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
-                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
-                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
-                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
-                    <span>10 Likes</span>
-                    <span>-</span>
-                    <span>12 Comment</span>
-                    <span>-</span>
-                    <span>3 bookmark</span>
-                  </div>
-                  <div class="d-flex mt-4">
-                    <img src="./assets/image/user-karen.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
-                    <p class="ms-3 my-auto fw-medium">Karen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 mt-5 card-menu border-0 mx-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
-              </div>
-              <div class="container col-md-6 p-0">
-                <div class="ms-md-4 card-body ps-1 pt-md-0">
-                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
-                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
-                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
-                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
-                    <span>10 Likes</span>
-                    <span>-</span>
-                    <span>12 Comment</span>
-                    <span>-</span>
-                    <span>3 bookmark</span>
-                  </div>
-                  <div class="d-flex mt-4">
-                    <img src="./assets/image/user-karen.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
-                    <p class="ms-3 my-auto fw-medium">Karen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 mt-5 card-menu border-0 mx-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
-              </div>
-              <div class="container col-md-6 p-0">
-                <div class="ms-md-4 card-body ps-1 pt-md-0">
-                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
-                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
-                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
-                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
-                    <span>10 Likes</span>
-                    <span>-</span>
-                    <span>12 Comment</span>
-                    <span>-</span>
-                    <span>3 bookmark</span>
-                  </div>
-                  <div class="d-flex mt-4">
-                    <img src="./assets/image/user-karen.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
-                    <p class="ms-3 my-auto fw-medium">Karen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 mt-5 card-menu border-0 mx-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
-              </div>
-              <div class="container col-md-6 p-0">
-                <div class="ms-md-4 card-body ps-1 pt-md-0">
-                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
-                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
-                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
-                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
-                    <span>10 Likes</span>
-                    <span>-</span>
-                    <span>12 Comment</span>
-                    <span>-</span>
-                    <span>3 bookmark</span>
-                  </div>
-                  <div class="d-flex mt-4">
-                    <img src="./assets/image/user-karen.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
-                    <p class="ms-3 my-auto fw-medium">Karen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 mt-5 card-menu border-0 mx-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
-              </div>
-              <div class="container col-md-6 p-0">
-                <div class="ms-md-4 card-body ps-1 pt-md-0">
-                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
-                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
-                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
-                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
-                    <span>10 Likes</span>
-                    <span>-</span>
-                    <span>12 Comment</span>
-                    <span>-</span>
-                    <span>3 bookmark</span>
-                  </div>
-                  <div class="d-flex mt-4">
-                    <img src="./assets/image/user-karen.png" alt="users-photo" width="64" height="64" class="d-inline-blok rounded-circle object-fit-cover" />
-                    <p class="ms-3 my-auto fw-medium">Karen</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content-right col-1 d-md-flex flex-column d-sm-none" style="row-gap: 250px">
-          <div class="h-50 background-primary align-self-end" style="width: 35px"></div>
-          <div class="h-50 background-primary align-self-end" style="width: 35px"></div>
-        </div>
-        <div class="container d-flex justify-content-center gap-4 mt-5 mb-5">
-          <span class="color-grey align-self-center">Show 1-5 from 20</span>
-          <button class="btn background-primary text-white align-self-center">Next</button>
+      <!-- Tab Start -->
+      <section class="container mt-5">
+        <div class="tab-status">
+          <ul class="nav nav-tabs d-flex justify-content-between">
+            <li class="nav-item">
+              <h4 class="px-0"><a class="nav-link px-0 tab-active color-grey" aria-current="page" href="#">Recipes</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4><a class="nav-link px-0 color-gray" href="#">Bookmarked</a></h4>
+            </li>
+            <li class="nav-item">
+              <h4><a class="nav-link px-0 color-gray" href="#">Liked</a></h4>
+            </li>
+          </ul>
         </div>
       </section>
-      <!-- Menu Recipes End -->
+      <!-- Tab End -->
+
+      <!-- Recipes Start -->
+      <section class="menu-recipes container">
+        <div class="content-left">
+          <div class="card mb-3 mt-5 card-menu border-0">
+            <div class="row g-0 mb-5">
+              <div class="col-md-6">
+                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
+              </div>
+              <div class="container col-md-6 p-0">
+                <div class="ms-md-4 card-body ps-1 pt-md-0">
+                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
+                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
+                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
+                    <span>10 Likes</span>
+                    <span>-</span>
+                    <span>12 Comment</span>
+                    <span>-</span>
+                    <span>3 bookmark</span>
+                  </div>
+                  <div class="d-flex mt-4 justify-content-between">
+                    <button class="btn btn-primary">Edit Recipe</button>
+                    <button class="btn btn-danger">Delete Recipe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 mb-5">
+              <div class="col-md-6">
+                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
+              </div>
+              <div class="container col-md-6 p-0">
+                <div class="ms-md-4 card-body ps-1 pt-md-0">
+                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
+                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
+                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
+                    <span>10 Likes</span>
+                    <span>-</span>
+                    <span>12 Comment</span>
+                    <span>-</span>
+                    <span>3 bookmark</span>
+                  </div>
+                  <div class="d-flex mt-4 justify-content-between">
+                    <button class="btn btn-primary">Edit Recipe</button>
+                    <button class="btn btn-danger">Delete Recipe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 mb-5">
+              <div class="col-md-6">
+                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
+              </div>
+              <div class="container col-md-6 p-0">
+                <div class="ms-md-4 card-body ps-1 pt-md-0">
+                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
+                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
+                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
+                    <span>10 Likes</span>
+                    <span>-</span>
+                    <span>12 Comment</span>
+                    <span>-</span>
+                    <span>3 bookmark</span>
+                  </div>
+                  <div class="d-flex mt-4 justify-content-between">
+                    <button class="btn btn-primary">Edit Recipe</button>
+                    <button class="btn btn-danger">Delete Recipe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 mb-5">
+              <div class="col-md-6">
+                <img src="./assets/image/menu.png" class="img-fluid rounded-start w-100" alt="..." />
+              </div>
+              <div class="container col-md-6 p-0">
+                <div class="ms-md-4 card-body ps-1 pt-md-0">
+                  <h3 class="card-title mb-4 color-grey fw-medium">Bomb Chicken</h3>
+                  <p class="card-text fw-medium mb-0 color-grey">Ingredients:</p>
+                  <p class="card-text fw-medium color-grey">chicken, dumpling wrap, garlic, spring onion, soy sauce, black sesame seed</p>
+                  <div class="status d-flex background-primary text-white justify-content-around py-2 btn">
+                    <span>10 Likes</span>
+                    <span>-</span>
+                    <span>12 Comment</span>
+                    <span>-</span>
+                    <span>3 bookmark</span>
+                  </div>
+                  <div class="d-flex mt-4 justify-content-between">
+                    <button class="btn btn-primary">Edit Recipe</button>
+                    <button class="btn btn-danger">Delete Recipe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center gap-4 mt-5 mb-5">
+          <button class="btn background-primary text-white align-self-center">Prev</button>
+          <span class="color-grey align-self-center">Show 6-10 from 10</span>
+        </div>
+      </section>
+      <!-- Recipes End -->
     </div>
+
+    <div class="container-fluid ff-poppins px-0"></div>
 
     <!-- Footer Start -->
     <footer class="ff-poppins background-primary color-blue mt-5">
@@ -224,4 +209,5 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/date.js"></script>
 </html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-transparent ff-poppins" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand d-md-none" href="/index.html">
+          <span>Food Recipe</span>
+        </a>
+        <button class="navbar-toggler collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5 ms-md-5">
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="/register.html"> <span>Register</span></a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/login.html"><span>Login</span></a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="/searchRecipes.html"><span class="active">Search Recipes</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid ff-poppins">
+      <!-- Hero Section Start -->
+      <section class="hero row">
+        <div class="content col-10 col-sm-9 d-flex flex-column justify-content-center">
+          <h1 class="color-blue fw-medium display-5">Discover Recipe & Delicious Food</h1>
+          <div class="d-flex mt-3 search align-items-center">
+            <label for="search" class="py-3 ps-4 rounded"><img src="./assets/icon/search.svg" alt="" /></label>
+            <input type="search" class="form-control py-3" placeholder="Search Recipes" />
+          </div>
+        </div>
+        <div class="decoration col-2 col-sm-3 d-flex background-primary align-items-center">
+          <img src="./assets/image/detail-menu.jpg" alt="hero-image" class="d-none d-md-block" />
+        </div>
+      </section>
+      <!-- Hero Section End-->
+    </div>
+
+    <!-- Suggestion Section Start -->
+    <section class="suggestion ff-poppins">
+      <div class="title-section py-3 px-3 mb-5">
+        <h2 class="fw-semibold">Popular For You!</h2>
+      </div>
+      <div class="row mx-0">
+        <div class="left col-12 col-md-6 d-flex justify-content-center">
+          <div class="ellipse d-none d-md-flex">
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+            <img src="./assets/icon/Ellipse 114.svg" alt="Ellipse" class="img-elipse" />
+          </div>
+          <img src="./assets/image/img-suggestion.jpg" alt="img-suggestion" class="mb-3 img-suggestion" />
+          <div class="rectangle"></div>
+        </div>
+        <div class="right col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <div>
+            <h1 class="mb-md-4 mb-xl-5">Healthy Bone Broth Ramen (Quick & Easy)</h1>
+            <p class="mb-md-4 mb-xl-5">Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That’s right!</p>
+            <a href="/detailRecipe.html" class="btn background-primary text-white justify-content-start">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Suggestion Section End -->
+
+    <!-- New Section Start -->
+    <section class="new ff-poppins mb-5">
+      <div class="title-section py-3 px-3 mb-5">
+        <h2 class="fw-semibold">New Recipe</h2>
+      </div>
+      <div class="row mx-0">
+        <div class="left col-12 col-md-6 d-flex justify-content-center">
+          <div class="new-decoration"></div>
+          <img src="./assets/image/new-recipe.jpg" alt="img-new-recipe" class="mb-3 img-new" />
+        </div>
+        <div class="right col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <div>
+            <h1 class="mb-md-4 mb-xl-5">Healthy Bone Broth Ramen (Quick & Easy)</h1>
+            <p class="mb-md-4 mb-xl-5">Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in a hurry? That’s right!</p>
+            <a href="/detailRecipe.html" class="btn background-primary text-white justify-content-start">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Section End -->
+
+    <!-- Popular Section Start -->
+    <section class="popular ff-poppins mb-5">
+      <div class="title-section py-3 px-3 mb-5">
+        <h2 class="fw-semibold">Popular Recipe</h2>
+      </div>
+      <div class="container-fluid wrapper-popular">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card">
+                <p class="title text-dark fw-medium">Chicken Kare</p>
+                <img src="/assets/image/popular-1.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card align-items-center">
+                <p class="title text-dark fw-medium">Bomb Chiken</p>
+                <img src="/assets/image/popular-2.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card align-items-center">
+                <p class="title text-dark fw-medium">Banana Smothie Pop</p>
+                <img src="/assets/image/popular-3.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card align-items-center">
+                <p class="title text-dark fw-medium">Coffee Lava Cake</p>
+                <img src="/assets/image/popular-4.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card align-items-center">
+                <p class="title text-dark fw-medium">Sugar Salmon</p>
+                <img src="/assets/image/popular-5.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/detailRecipe.html">
+              <div class="card align-items-center">
+                <p class="title text-dark fw-medium">Indian Salad</p>
+                <img src="/assets/image/popular-6.jpg" class="card-img-top" alt="Chicken Kare" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Section End -->
+
+    <!-- Footer Start -->
+    <footer class="ff-poppins background-primary color-blue mt-5">
+      <div class="top">
+        <h1 class="display-5 mb-4 fw-medium">Eat, Cook, Repeat</h1>
+        <p class="mx-3 text-center color-grey fw-medium">Share your best recipe by uploading here !</p>
+      </div>
+      <div class="bottom">
+        <ul class="m-0 p-0">
+          <li><a class="color-grey" href="#">Product</a></li>
+          <li><a class="color-grey" href="#">Company</a></li>
+          <li><a class="color-grey" href="#">Learn More</a></li>
+          <li><a class="color-grey" href="#">Get In Touch</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./assets/js/navbar.js"></script>
+</html>

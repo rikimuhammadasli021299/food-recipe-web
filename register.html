@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/auth.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container-fluid d-flex flex-column justify-content-center register ff-poppins">
+      <header class="container d-flex flex-column align-items-center">
+        <img src="./assets/icon/barbecue 1.svg" alt="icon-app" class="mb-2" height="100" width="100" />
+        <p class="fw-medium color-primary text-center">Food Recipe</p>
+        <h3 class="color-primary mt-4 fw-semibold text-center">Let's Get Started!</h3>
+        <p class="text-new-account text-center">Create new account to access all features</p>
+        <span></span>
+      </header>
+      <div class="container">
+        <form action="">
+          <div class="mb-3">
+            <label for="name" class="form-label text-label">Name</label>
+            <input type="text" class="form-control p-3 text-input" id="name" placeholder="Name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-label">E-mail</label>
+            <input type="email" class="form-control p-3 text-input" id="email" placeholder="E-mail" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label text-label">Password</label>
+            <input type="password" class="form-control p-3 text-input" id="password" placeholder="Password" />
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" />
+            <label class="form-check-label text-label" for="terms">I agree to terms and conditions</label>
+          </div>
+          <button type="submit" class="btn background-primary w-100 text-light mb-2 p-3 text-white">Register Account</button>
+        </form>
+        <p class="text-center text-secondary mt-4">
+          Already have account?
+          <a class="color-primary text-decoration-none" href="/login.html">Log in Here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

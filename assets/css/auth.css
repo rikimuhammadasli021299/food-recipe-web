@@ -11,7 +11,11 @@ header img {
 }
 
 .login header img {
-  margin-top: 100px;
+  margin-top: 135px;
+}
+
+.forgot-password header img {
+  margin-top: 35px;
 }
 
 header span {
@@ -63,6 +67,6 @@ input[type='checkbox']:checked {
   }
 
   .login header img {
-    margin-top: 300px;
+    margin-top: 320px;
   }
 }

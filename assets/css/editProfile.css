@@ -46,7 +46,9 @@
 }
 
 .input-name,
-.input-email {
+.input-email,
+.old-password,
+.new-password {
   color: #8692a6 !important;
   border: 1px solid #8692a6 !important;
   padding: 15px 10px;

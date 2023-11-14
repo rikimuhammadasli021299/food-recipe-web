@@ -40,8 +40,8 @@ header span {
 }
 
 .text-input:focus {
-  border: 2px solid #efc81a !important;
-  box-shadow: none;
+  border: 1px solid #efc81a !important;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
 }
 
 input[type='checkbox']:hover {

@@ -197,8 +197,8 @@
   /* Hero start */
   .hero .decoration img {
     right: 100px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
   .hero .content .search {
     max-width: 435px;
@@ -211,8 +211,8 @@
   }
 
   .suggestion .left .img-suggestion {
-    width: 230px;
-    height: 230px;
+    width: 430px;
+    height: 430px;
   }
 
   .rectangle {
@@ -238,8 +238,8 @@
 
   /* New Start */
   .new .left .img-new {
-    width: 230px;
-    height: 230px;
+    width: 430px;
+    height: 430px;
     margin-top: 55px;
     margin-left: -205px;
   }
@@ -253,7 +253,7 @@
 
   /* Popular Start */
   .popular img {
-    height: 200px;
+    height: 300px;
   }
   /* Popular End */
 }
@@ -262,8 +262,8 @@
   /* Hero Start */
   .hero .decoration img {
     right: 135px;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
   }
   /* Hero End */
 
@@ -275,7 +275,7 @@
 
   /* Popular Start */
   .popular img {
-    height: 250px;
+    height: 350px;
   }
   /* Popular End */
 }
